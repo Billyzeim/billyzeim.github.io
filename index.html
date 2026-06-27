@@ -73,10 +73,28 @@
             padding-left: 20px;
             margin-top: 10px;
         }
-        /* Makes it mobile friendly */
+        .header-profile {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; 
+            object-fit: cover;
+            border: 3px solid #eaeaea; 
+        }
+
         @media (max-width: 600px) {
             .grid-2 {
                 grid-template-columns: 1fr;
+            }
+            .header-profile {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
             }
         }
     </style>
@@ -84,13 +102,19 @@
 <body>
 
     <header>
-        <h1>Vassilis Zeimpekis</h1>
-        <div class="subtitle">Electrical & Computer Engineering Student</div>
-        <div class="links">
-            <a href="mailto:bzeimp@gmail.com">Email Me</a>
-            <a href="https://www.linkedin.com/in/vassilis-zeimpekis-681495236/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Billyzeim" target="_blank">GitHub</a>
-            <!-- <a href="link-to-your-pdf-resume.pdf" target="_blank">Download Resume</a> -->
+        <div class="header-profile">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQF2wSSmDSzBvQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1684165331364?e=1784160000&v=beta&t=pDQoVjuebbQKsqyWKaPatnCNEMtOysjgzc_66eK3Dp0" alt="Vassilis Zeimpekis" class="profile-pic">
+            
+            <div class="header-text">
+                <h1>Vassilis Zeimpekis</h1>
+                <div class="subtitle">Electrical & Computer Engineering Student</div>
+                <div class="links">
+                    <a href="mailto:bzeimp@gmail.com">Email Me</a>
+                    <a href="https://www.linkedin.com/in/vassilis-zeimpekis-681495236/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Billyzeim" target="_blank">GitHub</a>
+                    <!-- <a href="link-to-your-pdf-resume.pdf" target="_blank">Download Resume</a> -->
+                </div>
+            </div>
         </div>
     </header>
 
