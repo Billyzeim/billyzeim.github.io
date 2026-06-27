@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vassilis Zeimpekis</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fcfcfc;
+        }
+        header {
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0 0 5px 0;
+            color: #1a1a1a;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .links a {
+            margin-right: 15px;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .tech-stack {
+            font-size: 0.85em;
+            color: #666;
+            background: #f4f4f4;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        /* Makes it mobile friendly */
+        @media (max-width: 600px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Vassilis Zeimpekis</h1>
+        <div class="subtitle">Electrical & Computer Engineering Student</div>
+        <div class="links">
+            <a href="mailto:bzeimp@gmail.com">Email Me</a>
+            <a href="https://www.linkedin.com/in/vassilis-zeimpekis-681495236/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Billyzeim" target="_blank">GitHub</a>
+            <!-- <a href="link-to-your-pdf-resume.pdf" target="_blank">Download Resume</a> -->
+        </div>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a second-year Electrical and Computer Engineering (ECE) student at the <a href="https://www.ece.upatras.gr/index.php/en/">University of Patras</a> 
+            and a systems researcher with <a href="https://atlas.cs.brown.edu/">Brown University's Atlas group</a>. 
+            My current research involves high-level systems security, focusing on hardening AI agents using deterministic techniques.</br>
+            My primary engineering interest - and the focus of my personal projects - is low-level systems and security. 
+            I am exploring bare-metal development and recently built a <a href="https://github.com/Billyzeim/Skyl-OS">custom operating system</a> from scratch to deeply understand kernel-level interactions. 
+            In my free time, you can find me diving in FPGA design, operating systems, and custom electronics.
+        </p>
+    </section>
+
+    <section>
+        <h2>Core Skills</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>Systems & Security</h3>
+                <ul>
+                    <li><strong>Systems Architecture:</strong> Custom OS development, bare-metal programming, and kernel-level interactions</li>
+                    <li><strong>Security:</strong> AI agent systems hardening using deterministic techniques</li>
+                    <li><strong>Environment:</strong> Linux/Unix internals, Bash scripting</li>
+                    <li><strong>Languages:</strong> C, C++, Rust, Python, JavaScript, C#</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Hardware & Embedded</h3>
+                <ul>
+                    <li><strong>Digital Logic:</strong> FPGA programming and HDL (Verilog/VHDL)</li>
+                    <li><strong>Electronics:</strong> Custom electronics design, prototyping, and hardware-level debugging</li>
+                    <li><strong>Embedded:</strong> Microcontroller programming and development </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Projects</h2>
+        
+        <div class="card">
+            <h3>SkylOS - Educational Operating System</h3>
+            <div class="tech-stack">Operating Systems | C | Assembly | Educational</div>
+            <p>Developed an educational operating system from absolute scratch.</p>
+            <ul>
+                <li>Bootloader written in assembly.</li>
+                <li>Interrupt handling system.</li>
+                <li>Virtual memory management.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Operating Systems Lab Material</h3>
+            <div class="tech-stack">Operating Systems | Lab Material | C | Assembly | Interrupt Handling</div>
+            <p>Collaborated with Vagos Lamprou to extend the lab material for the operating systems course in University of Patras.</p>
+            <ul>
+                <li>Wrote assignments on SkylOS project for students taking the course.</li>
+                <li>Composed educational matterial to prepare readers for solving the assignments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        <div class="card">
+            <h3>Researcher at Brown University's Atlas group</h3>
+            <div class="tech-stack">March 2026 – Present</div>
+            <ul>
+                <li>Hardening AI agent security using shell analysis techniques.</li>
+                <li>Researching JIT analysis for shell.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="card">
+            <h3>Integrated Master Student</h3>
+            <p><strong>University of Patras</strong> | Expected Graduation: 2029</p>
+            <p>Relevant Coursework: Digital Systems and Circuits, Object-Oriented Programming, Procedural Programming, Introduction to Computers, Signals and Systems Analysis.</p>
+        </div>
+    </section>
+
+</body>
+</html>
